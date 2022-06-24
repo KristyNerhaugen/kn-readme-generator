@@ -7,6 +7,48 @@ const inquirer = require('inquirer');
 const questions = () => {
     return inquirer.prompt([
         {
+            // user name
+            type: 'input',
+            name: 'name',
+            message: 'What is your name? (Required)',
+            validate: nameInput => {
+              if (nameInput) {
+                return true;
+              } else {
+                console.log('Please enter your name.');
+                return false;
+              }
+            }
+          },
+          {
+            // GitHub username 
+            type: 'input',
+            name: 'github',
+            message: 'What is your GitHub Username? (Required)',
+            validate: githubInput => {
+              if (githubInput) {
+                return true;
+              } else {
+                console.log('Please enter your GitHub username.');
+                return false;
+              }
+            }
+          },
+          {
+            // email address
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address? (Required)',
+            validate: emailInput => {
+              if (emailInput) {
+                return true;
+              } else {
+                console.log('Please enter your email address.');
+                return false;
+              }
+            }
+          },
+          {
             // project name--required 
             type: 'input',
             name: 'title',
@@ -24,7 +66,7 @@ const questions = () => {
             // project description--required 
             type: 'input',
             name: 'description',
-            message: 'What is the description of your project? Explain the what, why, and how of your project. (Required)',
+            message: 'What is the description for your project? Explain the what, why, and how of your project. (Required)',
             validate: descriptionInput => {
                 if (descriptionInput) {
                     return true;
@@ -66,13 +108,13 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'confirmCredits',
-            message: 'Would you like to enter some information for the "Credits" section?',
+            message: 'Would you like to enter some information for the "Credits" section? This could be information about collaborators, third-party assets, and/or tutorials.',
             default: true
           },
           {
             type: 'input',
             name: 'credits',
-            message: 'Provide some information about collaborators, third-party assets, and/or turtorials for the "Credits" section.',
+            message: 'Provide some information about collaborators, third-party assets, and/or tutorials for the "Credits" section.',
             when: ({ confirmCredits }) => confirmCredits
           },
         {
@@ -80,11 +122,11 @@ const questions = () => {
             type: 'checkbox',
             name: 'license',
             message: 'Which license do you want to include? Please select only one. ',
-            choices: ['MIT', 'GNU GPLv3', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+            choices: ['MIT', 'GNU GPLv3']
           },
           // contribution guidelines information
           // tests instruction
-          // questions information 
+          // questions information--can this be the name/GitHub/email proivided at the beginning? 
     ]);
 }
 
