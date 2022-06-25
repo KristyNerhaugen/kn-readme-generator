@@ -1,9 +1,9 @@
-// Packages needed for this application
+// TODO: Include packages needed for this application
 // require fs and require inquirer since inquirer is installed 
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// Array of questions for user input
+// TODO: Create an array of questions for user input
 const questions = () => {
   return inquirer.prompt([
     {
@@ -109,7 +109,7 @@ const questions = () => {
       type: 'confirm',
       name: 'confirmCredits',
       message: 'Would you like to enter some information for the "Credits" section? This could be information about collaborators, third-party assets, and/or tutorials.',
-      default: false
+      default: true
     },
     {
       type: 'input',
@@ -128,21 +128,21 @@ const questions = () => {
     // tests instruction
     // questions information--can this be the name/GitHub/email proivided at the beginning? 
   ])
-  // Function to write README file
     .then(data => {
-      const filename = `./dist/${data.title
+      const filename = `${data.title
         .split(' ')
         .join('')}.md`;
       fs.writeFile(filename, JSON.stringify(data, null, '\t'), err =>
-        err ? console.log(err) : console.log('Success! README created!')
+        err ? console.log(err) : console.log('Success!')
       );
     });
 };
 
-// Function to initialize app
-function init() {
-  questions();
- }
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) { }
 
-// Function call to initialize app
-init();
+// // TODO: Create a function to initialize app
+// function init() { }
+
+// // Function call to initialize app
+// init();
