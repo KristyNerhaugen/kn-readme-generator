@@ -2,6 +2,9 @@
 // require fs and require inquirer since inquirer is installed 
 const inquirer = require('inquirer');
 const fs = require('fs');
+// require generateMarkdown to connect to generateMarkdown.js
+const generateMarkdown = require('./utils/generateMarkdown');
+const { generate } = require('rxjs');
 
 // Array of questions for user input
 const questions = () => {
@@ -128,12 +131,12 @@ const questions = () => {
     // tests instruction
     // questions information--can this be the name/GitHub/email proivided at the beginning? 
   ])
-  // Function to write README file
+  // Function to write README file--figure out how to connect this function to generateMarkdown
     .then(data => {
       const filename = `./dist/${data.title
         .split(' ')
         .join('')}.md`;
-      fs.writeFile(filename, JSON.stringify(data, null, '\t'), err =>
+      fs.writeFile(filename, generateMarkdown(data), err =>
         err ? console.log(err) : console.log('Success! README created!')
       );
     });
