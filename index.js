@@ -127,9 +127,34 @@ const questions = () => {
       message: 'Which license do you want to include? Please select only one. ',
       choices: ['MIT', 'GNU GPLv3']
     },
-    // contribution guidelines information
-    // tests instruction
-    // questions information--can this be the name/GitHub/email proivided at the beginning? 
+    {
+      // contributing information-required 
+      type: 'input',
+      name: 'contributing',
+      message: 'What are the contribution guidelines for your project?(Required)',
+      validate: contributingInput => {
+        if (contributingInput) {
+          return true;
+        } else {
+          console.log('Please enter contribution guidelines.');
+          return false;
+        }
+      }
+    },
+    {
+      // tests instructions-required 
+      type: 'input',
+      name: 'tests',
+      message: 'Provide examples for how to run tests on your application. (Required)',
+      validate: testsInput => {
+        if (testsInput) {
+          return true;
+        } else {
+          console.log('Please enter information about running tests.');
+          return false;
+        }
+      }
+    },
   ])
   // Function to write README file--figure out how to connect this function to generateMarkdown
     .then(data => {

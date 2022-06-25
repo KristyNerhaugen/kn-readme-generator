@@ -14,7 +14,7 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ## Project Description
+  ## Description
   ### ${data.description}
   
   ## Table of Contents 
@@ -30,6 +30,12 @@ function generateMarkdown(data) {
 
   ## License
   ### ${data.license}
+
+  ## Contributing
+  ### ${data.contributing}
+
+  ## Tests
+  ### ${data.tests}
 
   ## Questions
   ### Reach out through GitHub or email. GitHub is here: github.com/${data.github}. For additional questions, email ${data.email}. 
