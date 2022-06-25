@@ -109,7 +109,7 @@ const questions = () => {
       type: 'confirm',
       name: 'confirmCredits',
       message: 'Would you like to enter some information for the "Credits" section? This could be information about collaborators, third-party assets, and/or tutorials.',
-      default: true
+      default: false
     },
     {
       type: 'input',
@@ -134,7 +134,7 @@ const questions = () => {
         .split(' ')
         .join('')}.md`;
       fs.writeFile(filename, JSON.stringify(data, null, '\t'), err =>
-        err ? console.log(err) : console.log('Success!')
+        err ? console.log(err) : console.log('Success! README created!')
       );
     });
 };
