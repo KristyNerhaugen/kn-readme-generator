@@ -38,7 +38,7 @@ function generateMarkdown(data) {
   ### ${data.tests}
 
   ## Questions
-  ### Reach out through GitHub or email. GitHub is here: github.com/${data.github}. For additional questions, email ${data.email}. 
+  ### Reach out through GitHub or email. GitHub is here: [Click here to go to GitHub page](https://github.com/${data.github}). For additional questions, contact through email. [Click here to email](mailto:${data.email}). 
 `;
 }
 
