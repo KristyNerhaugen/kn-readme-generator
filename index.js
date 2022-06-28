@@ -107,25 +107,26 @@ const questions = () => {
         }
       }
     },
-    // credits information--optional 
-    {
-      type: 'confirm',
-      name: 'confirmCredits',
-      message: 'Would you like to enter some information for the "Credits" section? This could be information about collaborators, third-party assets, and/or tutorials.',
-      default: false
-    },
+    // credits information--required
     {
       type: 'input',
       name: 'credits',
-      message: 'Provide some information about collaborators, third-party assets, and/or tutorials for the "Credits" section.',
-      when: ({ confirmCredits }) => confirmCredits
+      message: 'Provide some information about collaborators, third-party assets, and/or tutorials for the "Credits" section. (Required)',
+      validate: creditsInput => {
+        if (creditsInput) {
+          return true;
+        } else {
+          console.log('Please enter credits information.');
+          return false;
+        }
+      }
     },
     {
       // license information-required 
       type: 'checkbox',
       name: 'license',
       message: 'Which license do you want to include? Please select only one. ',
-      choices: ['MIT', 'GNU GPLv3']
+      choices: ['MIT', 'GNU GPLv3', 'none']
     },
     {
       // contributing information-required 
