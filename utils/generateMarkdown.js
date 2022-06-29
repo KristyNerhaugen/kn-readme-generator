@@ -1,6 +1,7 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  console.log(license);
   if (license === 'none') {
     return '';
   } else if (license === 'MIT') {
@@ -11,36 +12,42 @@ function renderLicenseBadge(license) {
 }
 
 // TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// If there is no license, return an empty string --creating table of contents link 
 function renderLicenseLink(license) { 
-if (license === 'none') {
+  if (license === 'none' || license === undefined){
   return '';
-} if (license === 'MIT') {
-  return 'link here for MIT link'
-} else if (license === 'GNU GPLv3') {
-    return 'link here for GNU GPLv3'
-  }
+  } else return `\n  ### [License](#License)`;
 }
+// if (license === 'none') {
+//   return '';
+// } if (license === 'MIT') {
+//   return `Copyright YEAR ${name} 
+//   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+//    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
+// } else if (license === 'GNU GPLv3') {
+//     return `placeholder for GNU GPLv3 license information`
+//   }
+// }
 
 // TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// If there is no license, return an empty string --return License section header 
 function renderLicenseSection(license) { }
 
 // Function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} ${renderLicenseBadge(data.license)}
+  return `# ${data.title} ${renderLicenseBadge(data.license[0])}
 
   ## Description
   ### ${data.description}
   
   ## Table of Contents 
-  ### 1. [Installation](#Installation)
-  ### 2. [Usage](#Usage)
-  ### 3. [Credits](#Credits)
-  ### 4. [License](#License)
-  ### 5. [Contributing](#Contributing)
-  ### 6. [Tests](#Tests)
-  ### 7. [Questions](#Questions)
+  ### [Installation](#Installation)
+  ### [Usage](#Usage)
+  ### [Credits](#Credits) ${renderLicenseLink(data.license[0])}
+  ### [Contributing](#Contributing)
+  ### [Tests](#Tests)
+  ### [Questions](#Questions)
 
   ## Installation
   ### ${data.installation}
@@ -50,9 +57,6 @@ function generateMarkdown(data) {
 
   ## Credits
   ### ${data.credits}
-
-  ## License
-  ### ${data.license}
 
   ## Contributing
   ### ${data.contributing}
