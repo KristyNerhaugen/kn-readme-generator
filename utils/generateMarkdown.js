@@ -3,25 +3,24 @@
 function renderLicenseBadge(license) {
   if (license === 'none') {
     return '';
-    } else if (license === 'MIT') {
-      return `![MIT badge](https://img.shields.io/badge/License-MIT-yellow.svg)`
-    } else if (license === 'GNU GPLv3') {
-      return `![GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-    }
+  } else if (license === 'MIT') {
+    return `![MIT badge](https://img.shields.io/badge/License-MIT-yellow.svg)`
+  } else if (license === 'GNU GPLv3') {
+    return `![GNU GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+  }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
-// if (license === 'none') {
-//return ''; 
-// if (license === 'MIT') {
-//return 'link here for MIT link'
-//if else (license === 'GNU GPLv3') {
-// return 'link here for GNU GPLv3'
-// }
-// }
-//}
+function renderLicenseLink(license) { 
+if (license === 'none') {
+  return '';
+} if (license === 'MIT') {
+  return 'link here for MIT link'
+} else if (license === 'GNU GPLv3') {
+    return 'link here for GNU GPLv3'
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
