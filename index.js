@@ -132,7 +132,7 @@ const questions = () => {
       // contributing information-required 
       type: 'input',
       name: 'contributing',
-      message: 'What are the contribution guidelines for your project?(Required)',
+      message: 'What are the contribution guidelines for your project? (Required)',
       validate: contributingInput => {
         if (contributingInput) {
           return true;
