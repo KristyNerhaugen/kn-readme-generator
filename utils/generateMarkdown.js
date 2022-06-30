@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) { 
   if (license === 'none' || license === undefined) {
   return '';
-  } else return `\n  ### [License](#License)`;
+  } else return `\n  ### [License](#license)`;
 }
 
 // Function that returns the license section of README
@@ -38,12 +38,12 @@ function generateMarkdown(data) {
   ### ${data.description}
   
   ## Table of Contents 
-  ### [Installation](#Installation)
-  ### [Usage](#Usage)
-  ### [Credits](#Credits) ${renderLicenseLink(data.license[0])}
-  ### [Contributing](#Contributing)
-  ### [Tests](#Tests)
-  ### [Questions](#Questions)
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Credits](#credits) ${renderLicenseLink(data.license[0])}
+  ### [Contributing](#contributing)
+  ### [Tests](#tests)
+  ### [Questions](#questions)
 
   ## Installation
   ### ${data.installation}

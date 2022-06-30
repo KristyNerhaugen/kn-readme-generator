@@ -4,13 +4,13 @@
   ### Example description
   
   ## Table of Contents 
-  ### [Installation](#Installation)
-  ### [Usage](#Usage)
-  ### [Credits](#Credits) 
-  ### [License](#License)
-  ### [Contributing](#Contributing)
-  ### [Tests](#Tests)
-  ### [Questions](#Questions)
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Credits](#credits) 
+  ### [License](#license)
+  ### [Contributing](#contributing)
+  ### [Tests](#tests)
+  ### [Questions](#questions)
 
   ## Installation
   ### Example steps
