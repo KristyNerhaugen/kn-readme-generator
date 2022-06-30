@@ -20,9 +20,9 @@
 ### This image shows the command line user prompts that the user is required to answer:
 #### ![Screen shot of command line prompts](/assets/images/CommandLine.png)
 ### This image shows that the generated READMEs go into the dist folder:
-#### ![Screen shot of dist folder](/assets/images/SampleReADME.png)
+#### ![Screen shot of dist folder](/assets/images/DistFolder.png)
 ### This image shows a sample generated README:
-#### ![Screen shot of sample README](/assets/images/DistFolder.png)
+#### ![Screen shot of sample README](/assets/images/SampleREADME.png)
 
 ## Credits 
 ### I used what I learned in the BootCamp Spot modules and BootCamp classes to create this scheduler. Starter code was provided to me by the BootCamp. The starter code can be found here: [Starter Code](https://github.com/coding-boot-camp/potential-enigma). I used the following guide to ensure the generated READMEs were professional: [Coding BootCamp README guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide). I used these two sites to assist with markdown language: [W3schools Markdown Information](https://www.w3schools.io/file/markdown-links/) and [GitHub Markdown Guide](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). I used this mdn web docs to better understand template literals: [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). Also, I used these two sources to generate the license information: [Choose a license](https://choosealicense.com/) and [Markdown License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba). I used the inquirer package for this application: [Inquirer](https://www.npmjs.com/package/inquirer#questions). I used the node website to better understand Node.js: [Node.js](https://nodejs.dev/learn/the-nodejs-fs-module). I referred to the BootCamp spot blog for information about how to create a video tutorial: [Coding BootCamp Video Submission Guide](https://nodejs.dev/learn/the-nodejs-fs-module). 
