@@ -4,13 +4,13 @@
   ### Example Description
   
   ## Table of Contents 
-  ### [Installation](#Installation)
-  ### [Usage](#Usage)
-  ### [Credits](#Credits) 
-  ### [License](#License)
-  ### [Contributing](#Contributing)
-  ### [Tests](#Tests)
-  ### [Questions](#Questions)
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Credits](#credits) 
+  ### [License](#license)
+  ### [Contributing](#contributing)
+  ### [Tests](#tests)
+  ### [Questions](#questions)
 
   ## Installation
   ### Example steps for install
@@ -34,4 +34,4 @@
   ### Examples about running tests
 
   ## Questions 
-  ### Reach out through GitHub or email with any questions. [Click here to go to GitHub page](https://github.com/ExampleGitHubUser). For additional questions, contact through email. [Click here to email](mailto:ExampleEmail). 
+  ### Reach out through GitHub or email with any questions. [Click here to go to GitHub page](https://github.com/Example GitHub User). For additional questions, contact through email. [Click here to email](mailto:Example Email). 

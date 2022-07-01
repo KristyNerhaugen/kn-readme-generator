@@ -4,27 +4,27 @@
   ### Example Description
   
   ## Table of Contents 
-  ### [Installation](#Installation)
-  ### [Usage](#Usage)
-  ### [Credits](#Credits) 
-  ### [Contributing](#Contributing)
-  ### [Tests](#Tests)
-  ### [Questions](#Questions)
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Credits](#credits) 
+  ### [Contributing](#contributing)
+  ### [Tests](#tests)
+  ### [Questions](#questions)
 
   ## Installation
-  ### Example Installation 
+  ### Example Install
 
   ## Usage
   ### Example instructions
 
   ## Credits
-  ### Example information for collaborators and tutorials used
+  ### Example information about tutorials used and collaborators
   
   ## Contributing
-  ### Example contribution guidelines
+  ### Example guidelines
 
   ## Tests
-  ### Examples for how to run tests
+  ### Examples of how to run tests
 
   ## Questions 
-  ### Reach out through GitHub or email with any questions. [Click here to go to GitHub page](https://github.com/ExampleGitHubUser). For additional questions, contact through email. [Click here to email](mailto:ExampleEmail). 
+  ### Reach out through GitHub or email with any questions. [Click here to go to GitHub page](https://github.com/ExampleUserName). For additional questions, contact through email. [Click here to email](mailto:ExampleEmail). 

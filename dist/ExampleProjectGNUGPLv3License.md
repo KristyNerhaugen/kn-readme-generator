@@ -13,10 +13,10 @@
   ### [Questions](#questions)
 
   ## Installation
-  ### Example steps
+  ### Example install steps
 
   ## Usage
-  ### Example instructions and examples
+  ### Example instructions
 
   ## Credits
   ### Example information about collaborators and tutorials used
@@ -26,10 +26,10 @@
  #### [Click here to view the full GNU General Public License Version 3 license document](https://www.gnu.org/licenses/gpl-3.0.txt) 
 
   ## Contributing
-  ### Example contribution guidelines
+  ### Example guidelines
 
   ## Tests
-  ### Examples for how to run tests
+  ### Example tests
 
   ## Questions 
-  ### Reach out through GitHub or email with any questions. [Click here to go to GitHub page](https://github.com/ExampleGitHubUser). For additional questions, contact through email. [Click here to email](mailto:ExampleEmail). 
+  ### Reach out through GitHub or email with any questions. [Click here to go to GitHub page](https://github.com/ExampleUserName). For additional questions, contact through email. [Click here to email](mailto:ExampleEmail). 
