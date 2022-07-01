@@ -4,10 +4,10 @@
 ### For this challenge, I created a README Generator. The KN README Generator prompts the user to enter a name, GitHub account username, email address, project name, project description, installation instructions, usage information, credits information, information about how to contribute, and information about how to run tests on their application. Users are also prompted to select a license option. Once users answer all prompts, a high-quality README is generated with a title, description, linking table of contents, and labeled sections. The generated README can be found in the dist folder. Examples of sample generated READMEs can be found in the dist folder on this GitHub repository. There is no link to a deployed application because this application runs through the command-line
 
 ## Table of Contents 
-  ### [Installation](#Installation)
-  ### [Usage](#Usage)
-  ### [Credits](#Credits) 
-  ### [License](#License)
+  ### [Installation](#installation)
+  ### [Usage](#usage)
+  ### [Credits](#credits) 
+  ### [License](#license)
 
 ## Installation
 ### Access the code via GitHub. Fork, clone, or download the code. This application only works using node and requires the installation of the Inquirer package, which can be found here: [Inquirer](https://www.npmjs.com/package/inquirer). 
