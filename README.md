@@ -16,7 +16,7 @@
 ### This application is to be used to generate a quality README. 
 
 ### This video shows the functionality of the application:
-### LINK VIDEO HERE [Video Tutorial](LINK GOOGLE DRIVE FILE HERE)
+### [Video Tutorial](https://drive.google.com/file/d/1dD9XNV_0xH9sqxIYhoK63HH_O5AIYnoz/view?usp=sharing)
 ### This image shows the command line user prompts that the user is required to answer:
 #### ![Screen shot of command line prompts](/assets/images/CommandLine.png)
 ### This image shows that the generated READMEs go into the dist folder:
